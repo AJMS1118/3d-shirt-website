@@ -1,7 +1,15 @@
+import Canvas from "./canvas";
+import Home from "./pages/Customizer";
+import Customizer from "./pages/Customizer";
+
 function App() {
 	return (
 		<>
-			<div className="head-text head-color">react 3d based website </div>
+			<main className="app transition-all ease-in">
+				<Home />
+				<Canvas />
+				<Customizer />
+			</main>
 		</>
 	);
 }
