@@ -1,6 +1,6 @@
 import { useRef } from "react";
-import { easing } from "maath";
-import { useFrame } from "@react-three/fiber";
+// import { easing } from "maath";
+// import { useFrame } from "@react-three/fiber";
 import { AccumulativeShadows, RandomizedLight } from "@react-three/drei";
 
 const BackDrop = () => {
@@ -10,9 +10,8 @@ const BackDrop = () => {
 			ref={shadwos}
 			temporal
 			frames={60}
-			color="#22diee"
-			alphaTest={0.75}
-			scale={10}
+			alphaTest={0.85}
+			scale={5}
 			rotation={[Math.PI / 2, 0, 0]}
 			position={[0, 0, -0.14]}
 		>
@@ -33,4 +32,5 @@ const BackDrop = () => {
 		</AccumulativeShadows>
 	);
 };
+
 export default BackDrop;
