@@ -46,6 +46,21 @@ const Customizer = () => {
 							handleClick={() => (state.intro = true)}
 						/>
 					</motion.div>
+
+					<motion.div
+						className="filtertabs-container"
+						{...slideAnimation("up")}
+					>
+						{FilterTabs.map((tab) => (
+							<Tab
+								key={tab.name}
+								tab={tab}
+								isFilterTab
+								isACtiveTab=""
+								handleClick={() => {}}
+							/>
+						))}
+					</motion.div>
 				</>
 			)}
 		</AnimatePresence>
